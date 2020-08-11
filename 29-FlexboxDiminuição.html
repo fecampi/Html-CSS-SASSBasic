@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Flexbox - Flexible Box Layout</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			
+			#conteudo {
+				background: #dcdcdc;
+				height: 600px;
+				display: flex;
+
+			
+			}
+
+			.item {
+				margin: 10px;
+				background: white;
+				width: 300px;
+				height: 100px;
+				border: 1px solid gray;
+			}
+
+			/* Capacidade de redução do item.*/
+			.shrink0{
+				flex-shrink: 0;
+				
+			}
+
+			.shrink1{
+				flex-shrink: 1;
+			
+			}
+
+			.shrink2{
+				flex-shrink: 2;
+			
+			}
+
+			.shrink3{
+				flex-shrink: 3;
+			}
+
+			.basis{
+				flex-basis: auto;
+			}
+
+			/* tamanho inicial do item antes de distribuição.*/
+
+
+		</style>
+
+	</head>
+
+	<body>	
+
+		<div id="conteudo">
+			<div class="item shrink0">00</div>
+			<div class="item shrink1">01</div>
+			<div class="item shrink2">02</div>
+			<div class="item shrink3">03</div>
+		
+		</div>
+	
+	</body>
+
+</html>

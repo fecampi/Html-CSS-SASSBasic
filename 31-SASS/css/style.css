@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/*Instalar o scss*/
+/*  https://sass-lang.com */
+/*Converter o arquivo scss para o css*/
+/*  http://koala-app.com  /*/
+/*Aninhamento */
+#conteudo {
+  background: green; }
+  #conteudo h2, #conteudo h3 {
+    color: #d3dac5; }
+  #conteudo a {
+    color: red; }
+    #conteudo a:hover {
+      color: yellow; }
+
+/*variáveis */
+#variaveis {
+  color: blue;
+  font-size: 30px; }
+
+/* Escopo Variáveis 
+(onde variável é reconhecida) 
+*/
+#escopoDentro {
+  background-color: #d80d61; }
+
+#escopoFora {
+  color: #d80d61; }
+
+/*Interpolacao */
+#interpolacao {
+  color: red; }
+
+/*Ifelse*/
+.escolheCor {
+  color: red; }
+
+/* while */
+#while-1 {
+  background: #640a0a;
+  margin-bottom: 5%; }
+
+#while-2 {
+  background: #646e6e;
+  margin-bottom: 5%; }
+
+#while-3 {
+  background: #64d2d2;
+  margin-bottom: 5%; }
+
+#while-4 {
+  background: #64ffff;
+  margin-bottom: 5%; }
+
+/* for to */
+#forTo-1 {
+  background: green;
+  margin-bottom: 2px; }
+
+#forTo-2 {
+  background: green;
+  margin-bottom: 2px; }
+
+/* for through*/
+#forThrough-1 {
+  background: #0339cf;
+  margin-bottom: 2px; }
+
+#forThrough-2 {
+  background: #0339cf;
+  margin-bottom: 2px; }
+
+#forThrough-3 {
+  background: #0339cf;
+  margin-bottom: 2px; }
+
+/* each */
+#each-1 {
+  background: green;
+  margin-bottom: 2px; }
+
+#each-2 {
+  background: yellow;
+  margin-bottom: 2px; }
+
+#each-3 {
+  background: red;
+  margin-bottom: 2px; }
+
+/* Funções */
+.col-1 {
+  background: green;
+  width: 8.3333333333%;
+  margin-bottom: 2px; }
+
+.col-2 {
+  background: green;
+  width: 16.6666666667%;
+  margin-bottom: 2px; }
+
+.col-3 {
+  background: green;
+  width: 25%;
+  margin-bottom: 2px; }
+
+.col-4 {
+  background: green;
+  width: 33.3333333333%;
+  margin-bottom: 2px; }
+
+.col-5 {
+  background: green;
+  width: 41.6666666667%;
+  margin-bottom: 2px; }
+
+.col-6 {
+  background: green;
+  width: 50%;
+  margin-bottom: 2px; }
+
+.col-7 {
+  background: green;
+  width: 58.3333333333%;
+  margin-bottom: 2px; }
+
+.col-8 {
+  background: green;
+  width: 66.6666666667%;
+  margin-bottom: 2px; }
+
+.col-9 {
+  background: green;
+  width: 75%;
+  margin-bottom: 2px; }
+
+.col-10 {
+  background: green;
+  width: 83.3333333333%;
+  margin-bottom: 2px; }
+
+.col-11 {
+  background: green;
+  width: 91.6666666667%;
+  margin-bottom: 2px; }
+
+.col-12 {
+  background: green;
+  width: 100%;
+  margin-bottom: 2px; }
+
+/* Outras Funções */
+.mistura {
+  background: #02513c;
+  color: black; }
+
+.escurecer {
+  background: #103300;
+  color: black; }
+
+.clarear {
+  background: #dcffcc;
+  color: black; }
+
+/*Herança*/
+.filho {
+  color: #19269e; }
+
+.filho {
+  background: #b40a0a; }
+
+.filho {
+  border: 1px solid red; }
+
+.filho {
+  padding: 10px; }
+
+/*Mixin*/
+.cor1 {
+  color: green;
+  background: black;
+  padding: 10px 5px; }
+
+.cor2 {
+  color: white;
+  background: black;
+  padding: 10px 5px; }
+
+/*Mixins com Ifelse*/
+.escolheTema {
+  background: red;
+  color: white; }

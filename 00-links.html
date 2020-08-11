@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Textol</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div id="cima"></div>
+
+    <!--URL absoluto-->
+    <a id="cima" href="https://www.google.com">URL absoluto</a>
+    <br>
+
+    <!--URL relativo -->
+    <a href="00-link.html">Pagina</a>
+    <br>
+    <a href="/index.html">/</a>
+    <br>
+    <a href="../index.html">../</a>
+    <br>
+
+    <!--Abrir documento em nova janela-->
+    <a href="https://www.google.com" target="_blank">Google em nova janela</a>
+    <br>
+
+    <!--imagem como um link-->
+    <a href="https://www.google.com">
+        <img src="smiley.gif" alt="https://www.google.com" style="width:42px;height:42px;">
+    </a>
+    <br>
+
+    <!--Link para um endereço de email-->
+    <a href="mailto:someone@example.com">Send email</a>
+    <br>
+
+    <!--Botão como link-->
+    <button onclick="document.location='https://www.google.com'"">Google</button>
+    <br>
+
+    <!--dica de ferramenta-->
+    <a href="https://www.google.com" title="Google">Visite o google</a>
+    <br>
+
+    <a href="#baixo">Descer</a>
+    <br>
+    
+    <div id="baixo" style="position: absolute;top: 2000px;">
+        <a href="#cima">Subir</a>
+    </div>
+
+
+</body>
+
+</html>

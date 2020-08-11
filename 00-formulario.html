@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Contato</title>
+	<meta charset="utf-8">
+</head>
+<!-- comentario -->
+
+<body>
+
+	<form action="" method="post">
+
+
+
+
+		<!--hidden-->
+		<input type="hidden" name="id" value=2>
+		<br>
+
+
+		<!--text-->
+		<label for="name">Login:</label>
+		<input type="text" name="login">
+		<br>
+
+		<!--password-->
+		<label for="password">Senha:</label>
+		<input type="password" name="password">
+		<br>
+
+		<!--button-->
+		<input type="button" name="button" value="Logar"><br>
+		<br>
+
+		<!--radio-->
+		<input type="radio" name="sexo" value="M">
+		Masculino<br>
+		<input type="radio" name="sexo" value="F">
+		Feminino<br>
+
+		<!--checkbox-->
+		<input type="checkbox" name="interesses" value="futebol">Futebol<br>
+		<input type="checkbox" name="interesses" value="cursos">Cursos<br>
+		<input type="checkbox" name="interesses" value="moda">Moda<br><br>
+		<br>
+
+
+		<!--select-->
+		<select name="interesses">
+			<option value="SP">São Paulo</option>
+			<option value="RJ">Rio de Janeiro</option>
+			<option value="MG">Minas Gerais</option>
+			<option value="Rio grande do sul">RS</option>
+		</select>
+		<br>
+
+
+		<!--select multiple-->
+		<select name="interesses" multiple size="5">
+			<option value="SP">São Paulo</option>
+			<option value="RJ">Rio de Janeiro</option>
+			<option value="MG">Minas Gerais</option>
+			<option value="Rio grande do sul">RS</option>
+		</select>
+		<br>
+
+		<!--textarea-->
+		<textarea cols="30" rows="10"></textarea>
+		<br>
+
+		<!--Submit-->
+		<input type="submit" value="Cadastrar">
+		<br>
+
+		<!--button-->
+		<button formaction="http://localhost:8080/usuarios">Incluir<br></button>
+		<button formaction="http://localhost:8080/usuarios/3">Alterar<br></button>
+		<br>
+
+		<!--filedset-->
+		<fieldset>
+			<legend>Comentários</legend>
+				<input type="text" name="login">
+				<br>
+				<textarea name="mensagem" id="mensagem"></textarea>
+		</fieldset>
+
+	</form>
+
+
+
+</body>
+
+</html>

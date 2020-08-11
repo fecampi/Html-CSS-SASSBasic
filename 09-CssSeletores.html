@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Elementos flutuantes</title>
+		<meta charset="utf-8">
+		
+		<style type="text/css">
+
+
+		/*Seletor universal*/
+		/*Aplica-se em todos os elementos no documento*/
+		*{
+			color: red;
+		}
+
+
+		/*Seletor de texto*/
+		/*Seleciona elementos pelo tipo*/
+		body{
+			background: white;
+		}
+
+		h1, h2, h3 {
+			color: blue;
+
+		}
+
+		/*Seletor de importancia*/
+		/*Seleciona esse como o que vale no codigo*/
+		body{
+			background: black !important;
+		}
+
+
+		/*Seletor de classe*/
+		/*Seleciona um elemento cujo atributo class tem o valor especificado depois do ponto*/
+		.verde{
+			color: green;
+
+
+		}
+
+		p.verde{
+			color:#00FF00;
+
+
+		}
+
+		/*Seletor de ID*/
+		/*Seleciona um elemento cujo atributo id tem o valor especificado após o símbolo de cerquilha ou jogo da velha*/
+		#cabecalho{
+			color: yellow;
+
+
+		}
+
+		/*Seletor de filho*/
+		/*Seleciona um elemento que é filho direto de outro*/
+		li>a {
+			background: orange;
+
+		}
+
+		/*Seletor de descendente*/
+		/*Seleciona um elemento que é descendente de outro elemento especificado (e não apenas filho direto desse elemento)*/
+		ol a {
+			display:inline-block;
+			width: 50px;
+			height: 20px
+
+		}
+
+		/*Seletor de irmão adjacente*/
+		/*Seleciona um elemento que é o irmão próximo de outro*/
+		h2+a {
+			color: white;
+		}
+
+		/*Seletor de irmão geral*/
+		/*Seleciona um elemento que é um irmão de outro, embora ele não precise ser o elemento diretamente precedente*/
+		h2~a {
+			text-decoration: none;
+
+		}
+
+		</style>
+		
+	</head>
+	<body>
+		<h1>Título 1</h1>
+		<h2 class="verde">Título 2</h2>
+		<p class="verde">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fermentum leo vel orci porta. Mattis pellentesque id nibh tortor id aliquet lectus proin. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Turpis cursus in hac habitasse platea dictumst. Laoreet id donec ultrices tincidunt arcu non sodales.
+		</p> 
+		<p id="cabecalho">
+			At lectus urna duis convallis convallis tellus. Leo vel fringilla est ullamcorper eget nulla. Elementum integer enim neque volutpat ac tincidunt vitae semper quis. Ut lectus arcu bibendum at varius. Neque convallis a cras semper auctor. Sit amet volutpat consequat mauris nunc congue nisi vitae. At tellus at urna condimentum mattis pellentesque. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Amet nisl purus in mollis nunc sed id semper.
+		</p>
+
+		<ol>
+			<li><h2>Primeiro da lista</h2>
+				<a href="">Link a</a><br>
+				<a href="">Link b</a>
+			</li>
+			<li><h2>Segundo da lista</h2>
+				<a href="">Link a</a><br>
+				<a href="">Link b</a>
+		</ol>
+
+	</body>
+
+</html>

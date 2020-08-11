@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Estilos css externo</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+	.imagemFundo{
+		/* Tudo Junto
+		background: blue url('image/yoshi.png') repeat-x scroll top;
+		*/
+		background-image: url('image/yoshi.png');
+		
+		/* repeat-x, repeat-y, no-repeat, repeat */
+		background-repeat: repeat-x;
+		
+		/*scrool , fixed*/
+		background-attachment: scroll;
+		
+		/* 
+		primeiro valor: left, center, right 
+		segundo valor: top, center, bottom 
+		*/
+		background-position: center center;
+
+	}		
+	</style>
+
+</head>
+<body class="fundo">
+
+		<div class="imagemFundo">
+		<h1>
+			Texto Com Imagem<br>
+		</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at tortor a orci sodales efficitur ac quis augue. Ut ultricies nec diam in dignissim. Donec suscipit egestas sem.</p>			
+		</div>
+		
+</body>
+</html>

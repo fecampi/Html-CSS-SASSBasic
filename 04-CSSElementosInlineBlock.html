@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Elementos inline, block e inline-block</title>
+		<meta charset="utf-8">
+		
+		<style type="text/css">
+
+
+			/*Elementos inline*/
+			/*
+			ocupam apenas o tamanho do conteúdo inserido.
+			Não podem ser alterados o comprimento e a altura.
+			Ex: <span>, <strong>, <em>, <a>, <img>
+			*/
+
+			.inline {	
+				display: inline;
+				background: red;
+				height: 100px;
+				width: 100px
+			}
+
+			/*Elementos Block*/
+			/*
+			O browser acomoda os elementos de bloco um abaixo do outro
+			*/			
+
+			.block {
+				display: block;
+				background: red;
+				height: 100px;
+				width: 100px
+			}
+
+			/*inline-block*/
+			/*
+			o browser acomoda os elementos de bloco um ao lado do outro.
+			*/
+
+			.inline-block {	
+				display: inline-block;
+				background: green;
+				height: 100px;
+				width: 100px
+			}
+
+		</style>
+		
+	</head>
+	<body>
+
+		<div class="inline">
+			<p>
+			INLINE
+			</p>
+		</div>
+		
+		<div class="inline">
+			<p>
+			INLINE
+			</p>
+		</div>
+
+		<div class="inline">
+			<p>
+			INLINE
+			</p>
+		</div>
+	
+
+		<div class="block">
+			<p>
+				BLOCK 
+			</p>
+		</div>
+
+		<div class="block">
+			<p>
+				BLOCK 
+			</p>
+		</div>
+
+		<div class="block">
+			<p>
+				BLOCK 
+			</p>
+		</div>
+
+		<div class="inline-block">
+			<p>
+				inline-block
+			</p>
+		</div>
+
+		<div class="inline-block">
+			<p>
+				inline-block
+			</p>
+		</div>
+
+		<div class="inline-block">
+			<p>
+				inline-block
+			</p>
+		</div>
+
+
+	</body>
+
+</html>

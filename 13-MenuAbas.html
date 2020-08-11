@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Elementos flutuantes</title>
+		<meta charset="utf-8">
+		
+		<style type="text/css">
+			body{
+				font-family: "Trebuchet MS", Helvetica, sans-serif;
+			}
+
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				width: 720px
+			}
+
+			ul #atual{
+				background: url(image/aba-direita-atual.png)no-repeat top right;
+			}			
+			ul li{
+			
+				float: left;
+				background: url(image/aba-direita.png)no-repeat top right;
+			}
+
+			ul #atual a{
+				background: url(image/aba-esquerda-atual.png)no-repeat top left;
+			}
+
+			li a{
+				display: block;
+				padding: 0 2em;
+				line-height: 3em;
+				text-decoration: none;
+				background: url(image/aba-esquerda.png)no-repeat top left;
+				color: #fff;
+			}
+
+			ul a:hover{
+				color: #894a1f;
+			}
+
+
+						
+			
+		
+
+		</style>
+		
+	</head>
+	<body id="home">
+		
+		<ul>
+			<li id="atual">
+				<a href="">Home</a>
+			</li>
+
+			<li >
+				<a href="">Sobre</a>
+			</li>
+
+			<li>
+				<a href="">Serviços</a>
+			</li>
+
+			<li>
+				<a href="">Notícias</a>
+			</li>
+
+			<li>
+				<a href="">Contatos</a>
+			</li>		
+		</ul>
+
+	</body>
+
+</html>

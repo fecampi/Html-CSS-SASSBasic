@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Página principal</title>
+		<meta charset="utf-8">
+
+
+		<style type="text/css">
+			.conteudo {
+				border: 1px solid red;
+				/* Dentro*/
+				padding-top: 20px;
+				padding-right: 20px;
+				padding-bottom: 20px;
+				padding-left: 20px;
+				padding: 20px 15px 10px 5px;
+				padding: 20px;
+
+				/* Fora*/
+				margin-top: 20px;
+				margin-right: 20px;
+				margin-left: 20px;
+				margin-bottom: 20px;
+				margin: 10px ;
+
+				/*tamanho caixa*/
+				width: 150px;
+				height: 150px;
+
+				/*Tamanho real de 150X150 
+				inves de 170x170 (caixa + padding)*/
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+			}
+
+			.conteudo2 {
+				margin: 5px;
+				width: 150px;
+				
+				/* Tudo Junto
+				border: 15px outset red;
+				*/
+
+				border-color: red green yellow blue;
+				border-width: 15px 10px 8px 3px;
+				border-style: solid;
+				/*Propriedade de estilo de bordas
+				dotted - Define uma borda pontilhada
+				dashed - Define uma borda tracejada
+				solid - Define uma borda sólida
+				double - Define uma borda dupla
+				groove- Define uma borda estriada 3D. O efeito depende do valor da cor da borda
+				ridge- Define uma borda sulcada em 3D. O efeito depende do valor da cor da borda
+				inset- Define uma borda inserida em 3D. O efeito depende do valor da cor da borda
+				outset- Define uma borda inicial 3D. O efeito depende do valor da cor da borda
+				none - Define sem borda
+				hidden - Define uma borda oculta
+				*/;
+			}
+
+			/*Alterar parte do conteudo da caixa*/
+			.dentroCaixa{
+				color: red;
+			}
+
+			.formato{
+				background-color: green;
+				width: 160px;
+				height: 160px;
+				border-radius: 20px 45px 90px 90px;
+				-webkit-border-radius: 20px 45px 90px 90px;
+				-moz-border-radius: 20px 45px 90px 90px;
+
+			}
+
+			#noticia{
+				background: #f9f9f9;
+				border: 1px solid gray;
+				padding: 10px;
+			}
+
+			h2 {
+				margin: 0px;
+			}
+
+		</style>
+		
+
+		
+	</head>
+	<body>
+
+		<div id="noticia">
+			<h2>Lorem ipsum dolor sit amet</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur <span class = "dentroCaixa">adipiscing elit</span>. Proin aliquam lacus non pretium pharetra.
+			</p>
+		</div>
+
+		<div class="conteudo">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		</div>
+
+		<div class="conteudo2">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. 2
+		</div>
+
+
+		<div class="formato">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. 2
+		</div>
+
+		<p>Lorem ipsum</p>
+
+
+	</body>
+
+</html>

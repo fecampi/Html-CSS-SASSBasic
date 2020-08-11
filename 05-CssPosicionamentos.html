@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Posicionamentos (static, relative, absolute e fixed)</title>
+		<meta charset="utf-8">
+		
+		<style type="text/css">
+
+			body {
+				background: #007fc7;
+			}
+
+			#container{
+				background: #FFF;
+				width: 800px;
+				margin: 10px auto;
+				padding: 10px;
+				position: relative;
+			}
+
+			h1 {
+				
+			}
+
+			p {
+				width: 300px;
+			}
+
+			
+			.absolute {
+    			position: absolute;
+    			background: #009900;
+    			left: 60px;
+    			top: 35px;
+    		}
+
+			.relative {
+				position: relative;
+				background: #009900;
+    			left: 60px;
+    			top: 35px;
+			}
+			
+			.fixed {
+				background: #009900;
+    			position: fixed;
+    			right:10px;
+    			bottom:10px;
+    			/*rotacionar*/
+    			-ms-transform: rotate(30deg); /* IE 9 */
+    			-webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+    			transform: rotate(30deg);
+			}
+
+		</style>
+		
+	</head>
+	<body>
+
+		<div id="container">
+			
+			<h1>Posicionamentos</h1>
+
+			<p>
+				P1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at porta nibh. Ut posuere ex a lectus facilisis maximus. Proin ut porttitor lacus, in vulputate risus.
+			</p>
+
+			<p class="absolute">
+				Absoluto<br>
+				Retira o elemento da posição original, fazendo com que o lugar deixado seja ocupado pelo elemento que se segue.
+			</p>
+
+			<p>
+				P2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at porta nibh. Ut posuere ex a lectus facilisis maximus. Proin ut porttitor lacus, in vulputate risus.
+			</p>
+
+			<p class="relative">
+				Relativo<br>
+				O bloco sai de sua posição original e o espaço que ela ocupava é preservado.
+			</p>	
+
+			<p>
+				P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at porta nibh. Ut posuere ex a lectus facilisis maximus. Proin ut porttitor lacus, in vulputate risus.
+			</p>
+
+
+			<p class="fixed">
+				FIXO<br>O contexto de posicionamento é sempre a área de renderização, exemplo, canto inferior direito da tela do navegador. O bloco com esse valor não se movimenta quando há rolagem na página
+			</p>
+
+			<p>
+				P4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at porta nibh. Ut posuere ex a lectus facilisis maximus. Proin ut porttitor lacus, in vulputate risus.
+			</p>
+
+			<p>
+				P5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at porta nibh. Ut posuere ex a lectus facilisis maximus. Proin ut porttitor lacus, in vulputate risus.
+			</p>
+
+			<p>
+				P6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at porta nibh. Ut posuere ex a lectus facilisis maximus. Proin ut porttitor lacus, in vulputate risus.
+			</p>
+
+			<p>
+				P7 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at porta nibh. Ut posuere ex a lectus facilisis maximus. Proin ut porttitor lacus, in vulputate risus.
+			</p>
+
+			<p>
+				P8 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at porta nibh. Ut posuere ex a lectus facilisis maximus. Proin ut porttitor lacus, in vulputate risus.
+			</p>
+		
+
+		</div>
+
+	</body>
+
+</html>

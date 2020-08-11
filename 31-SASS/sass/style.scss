@@ -1,0 +1,196 @@
+
+/*Instalar o scss*/
+/*  https://sass-lang.com */
+
+
+/*Converter o arquivo scss para o css*/
+/*  http://koala-app.com  /*/
+
+/*Aninhamento */
+#conteudo {
+  background: green;
+  h2, h3 {
+    color: rgb(211, 218, 197);
+  }
+  a {
+    color: red;
+    &:hover {
+    color: yellow;
+  }
+  }
+  
+}
+
+
+/*variáveis */
+$cor-primaria: blue;
+$tamanho-titulo: 30px;
+
+#variaveis {
+  color: $cor-primaria;
+  font-size: $tamanho-titulo;
+}
+
+/* Escopo Variáveis 
+(onde variável é reconhecida) 
+*/
+$cor-padrao: rgb(217, 255, 0);
+#escopoDentro {
+  $cor-padrao: rgb(216, 13, 97) !global;
+  background-color: $cor-padrao;
+}
+
+#escopoFora {
+  color: $cor-padrao;
+}
+
+
+/*Interpolacao */
+$vermelho: red;
+$titulo: h4;
+$cor: color;
+
+#interpolacao {
+  #{$cor}: $vermelho;
+}
+
+/*Ifelse*/
+$cor:"vermelho";
+@if($cor == "verde"){
+  .escolheCor{
+    color: green;
+  }
+}@else if($cor == "vermelho"){
+  .escolheCor{
+    color: red;
+  }
+}@else{
+  .escolheCor{
+    color: black;
+  }
+}
+
+/* while */
+$contador: 1;
+$corWhile: 10;
+@while $contador < 5 {
+  #while-#{$contador} {
+    background: rgb(100, $corWhile, $corWhile);
+    margin-bottom:5%;
+  }
+  $contador: $contador + 1;
+  $corWhile: $corWhile + 100;
+  
+}
+
+
+/* for to */
+@for $i from 1 to 3 {
+  #forTo-#{$i} {
+    background: green;
+    margin-bottom:2px;
+  }
+}
+
+/* for through*/
+@for $i from 1 through 3 {
+  #forThrough-#{$i} {
+    background: rgb(3, 57, 207);
+    margin-bottom:2px;
+  }
+}
+
+/* each */
+$lista: green, yellow, red;
+$contador: 1;
+@each $cor in $lista {
+  
+  #each-#{$contador} {
+    background: $cor;
+    margin-bottom:2px;
+  }
+  $contador: $contador + 1;
+  
+}
+
+/* Funções */
+$total: 12;
+@function largura-coluna($coluna){ 
+  @return percentage($coluna/$total);
+  
+}
+
+@for $i from 1 to 13 {
+  .col-#{$i} {
+    background: green;
+    width: largura-coluna($i);
+    margin-bottom:2px;
+  }
+}
+
+/* Outras Funções */
+.mistura {
+  background: mix(green,rgb(3, 34, 119),50%);
+  color: rgb(0, 0, 0);
+}
+
+.escurecer {
+  background: darken(rgb(81, 255, 0),40%);
+  color: rgb(0, 0, 0);
+}
+
+.clarear {
+  background: lighten(rgb(81, 255, 0),40%);
+  color: rgb(0, 0, 0);
+}
+
+/*Herança*/
+%avo {
+  color: rgb(25, 38, 158);
+}
+%pai {
+  @extend %avo;
+  background: rgb(180, 10, 10);
+}
+
+%mae {
+  border:1px solid red;
+}
+.filho{
+  @extend %pai;
+  @extend %mae;
+  padding: 10px;
+}
+
+/*Mixin*/
+@mixin color-background($cor:white, $cor-bg:black) {
+  color: $cor;
+  background: $cor-bg;
+  padding: 10px 5px;
+}
+
+.cor1 {
+  @include color-background(green);
+}
+
+.cor2{
+  @include color-background();
+}
+
+/*Mixins com Ifelse*/
+@mixin tema($tema: padrao){
+  @if( $tema == natal ){
+    background: red;
+    color: white;
+  }@else if( $tema == blackfriday ){
+    background: black;
+    color: white;
+  }@else{
+    background: white;
+    color: black;
+  }
+}
+
+.escolheTema {
+  @include tema("natal");
+}

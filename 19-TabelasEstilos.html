@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TabelasEstilos</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			font-family: "Trebuchet MS", Helvetica, sans-serif;
+		}
+
+		table{
+			width: 600px;
+
+			border-collapse: separate;
+			/*separate - bordas separadas(padrão)*/
+			/*collapse - bordas juntas*/
+		}
+
+		/*tabela celula*/
+		th, td{
+			padding: 7px
+
+		}
+
+
+		/*tabela cabeçalho*/
+		th{
+			text-transform: uppercase;
+			border-top: 1px solid #999;
+			border-bottom:1px solid #111;
+			text-align: left;
+			font-size: 90%;
+			letter-spacing: 0.1em
+		}
+
+		tr.alternado{
+			background: #efefef;
+		}
+
+		.numero{
+			text-align: right;
+		}
+
+		tr:hover{
+			background-color: #c3e6e5; 
+		}
+
+	</style>
+</head>
+<body>
+	<h2>Estilizando tabelas</h2>
+	<table>
+		<tr>
+			<th>Código</th>
+			<th>Produto</th>
+			<th class="numero">Preço</th>
+		</tr>
+
+		<tr>
+			<td>001</td>
+			<td>Notebook</td>
+			<td class="numero">2.500</td>
+		</tr>
+
+		<tr class="alternado">
+			<td>002</td>
+			<td>Tablet</td>
+			<td class="numero">1.500</td>
+		</tr>
+
+		<tr>
+			<td>003</td>
+			<td>Iphone</td>
+			<td class="numero">3.500</td>
+		</tr>
+
+		<tr class="alternado">
+			<td>004</td>
+			<td>Nexus</td>
+			<td class="numero">3.500</td>
+		</tr>
+
+
+
+	</table>
+
+
+
+
+</body>
+</html>
